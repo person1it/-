@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>جمعية إتقاء - دورات تدريبية نظري وعملي</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/إتقاء/الرئيسية/home.html" class="logo"><img src="/إتقاء/الرئيسية/logo.png"></a>
+
+        <!-- NAVIGATION -->
+        <nav class="nav">
+        <button class="bank"><i class="fa-solid fa-landmark bank-button"></i></button>
+        <button class="store"><a href="#"><i class="fa-solid fa-cart-shopping "></i></a></button>
+        <button class="contact"><a href="/إتقاء/الرئيسية/home.html#contact">تواصل معنا</a></button>
+        <button class="main-menu main-menu-btn">القائمة الرئيسية<i class="fa-solid fa-bars-staggered"></i></button>
+        </nav>
+
+        <script>
+        const bankBt = document.querySelector(".bank-button");
+        const bankColor = document.querySelector(".bank-button");
+
+        bankBt.addEventListener("click", () => {
+            bankColor.classList.toggle("bank-color");
+        })
+        </script>
+
+        <script>
+        const mainMenuBtn = document.querySelector(".main-menu-btn");
+        const mainMenuColor = document.querySelector(".main-menu-btn");
+
+        mainMenuBtn.addEventListener("click", () => {
+            mainMenuColor.classList.toggle("show-color");
+        })
+        </script>
+
+        <nav class="alrajhibank">
+        <img src="alrajhibank-logo.png">
+        <p>SA000 0000 00</p>
+        <p>000 000 0000</p>
+        </nav>
+        </script>
+
+        <script>
+        const bank = document.querySelector(".bank-button");
+        const alrajhiBank = document.querySelector(".alrajhibank");
+
+        bank.addEventListener("click", () => {
+            alrajhiBank.classList.toggle("open");
+        })
+        </script>
+
+        <!--script>
+        function RunMe(){
+            var bank = document.querySelector(".bank");
+            
+            bank.add.
+        }
+        </script-->
+
+        <!-- NAVIGATION BAR -->
+        <nav class="navigation-bar">
+        <button class="about-us"><a href="/إتقاء/الرئيسية/home.html#about-us">عن إتقاء</a></button>
+        <button class="members"><a href="/إتقاء/الرئيسية/home.html#members">الأعضاء</a></button>
+        <button class="news"><a href="/إتقاء/الرئيسية/home.html#news">الأخبار</a></button>
+        <button class="events"><a href="/إتقاء/الرئيسية/home.html#events">الأحداث</a></button>
+        <button class="programs"><a href="/إتقاء/الرئيسية/home.html#programs">البرامج</a></button>
+        <button class="strategy"><a href="/إتقاء/الرئيسية/home.html#strategy">الأهداف الإستراتيجية</a></button>
+        </nav>
+
+        <script>
+        const mainMenu = document.querySelector(".main-menu");
+        const navigationBar = document.querySelector(".navigation-bar");
+
+        mainMenu.addEventListener("click", () => {
+            navigationBar.classList.toggle("active");
+        })
+        </script>
+
+        <!-- BAR -->
+        <nav class="bar">
+        <button class="bank-btn"><i class="fa-solid fa-landmark alrajhi-btn"></i></button>
+        <button class="store"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+        <button class="bar-btn"><i class="fa-solid fa-bars-staggered menu-btn"></i></button>
+        </nav>
+
+        <script>
+        const phonBtn = document.querySelector(".alrajhi-btn");
+        const phonButton = document.querySelector(".alrajhi-btn");
+
+        phonBtn.addEventListener("click", () => {
+            phonButton.classList.toggle("phone-btn");
+        })
+        </script>
+
+        <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const menuButton = document.querySelector(".menu-btn");
+
+        menuBtn.addEventListener("click", () => {
+            menuButton.classList.toggle("phone-button");
+        })
+        </script>
+
+        <!-- BAR LIST -->
+        <nav class="bar-list">
+        <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#about-us">عن إتقاء</a></button>
+        <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#members">الأعضاء</a></button>
+        <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#news">الأخبار</a></button>
+        <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#events">الأحداث</a></button>
+        <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#programs">البرامج</a></button>
+        <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#strategy">الأهداف الإستراتيجية</a></button>
+        <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#contact">تواصل معنا</a></button>
+        </nav>
+
+        <script>
+        const barBtn = document.querySelector(".menu-btn");
+        const barlist = document.querySelector(".bar-list");
+
+        barBtn.addEventListener("click", () => {
+            barlist.classList.toggle("toggle-menu");
+        })
+        </script>
+
+        <nav class="alrajhi">
+        <img src="alrajhibank-logo.png">
+        <p>SA000 0000 00</p>
+        <p>000 000 0000</p>
+        </nav>
+
+        <script>
+        const bankBtn = document.querySelector(".alrajhi-btn");
+        const alrajhi = document.querySelector(".alrajhi");
+
+        bankBtn.addEventListener("click", () => {
+            alrajhi.classList.toggle("show");
+        })
+        </script>
+
+    </header>
+
+    <section id="intro" class="dark">
+        <main class="container">
+            <div class="box intro-box">
+                <div class="card intro-card"><h3>التدريب يجسد أهداف وسمات رؤية 2030</h3></div>
+            </div>
+        </main>
+    </section>
+
+    <section id="intro" class="light">
+        <main class="container intro2-con">
+            <div class="box">
+                <div class="card intro2-card"><h3>تولي حكومة خادم الحرمين الشريفين موضوع تدريب الموارد البشرية وتنميتها أهمية قصوى، إيمانًا بأن العنصر البشري هو المحرك الأساسي لعجلة التنمية.</h3></div>
+            </div>
+        </main>
+    </section>
+
+    <section id="intro" class="light">
+        <main class="container intro2-con">
+            <div class="box vision-box">
+                <div class="card vision-card">
+                    <h3>اطلق صاحب السمو الملكي الأمير محمد بن سلمان ولي العهد رئيس مجلس الوزراء -حفظه الله- برنامج تنمية القدرات البشرية أحد برامج رؤوية المملكة 2030 والذي يمثل إستراتيجية وطنية تستهدف تعزيز تنافسية القدرات الوطنية في جميع المجالات.</h3>
+                </div>
+                <div class="card img">
+                    <img src="2030-logo.png">
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="results" class="light">
+        <main class="container">
+            <div class="box results-box">
+                <div class=" card results-card">
+                    <h3 class="results-name">النتائج المقاسة والمتوقعة من الدبلوم</h3>
+                    <div class="item"><p><i class="fa-solid fa-shield-virus"></i></p><p>مهارات تشغيل واستخدام الوسائل والتقنيات الحديثة لحصر واستكشاف نواقل الأمراض الوبائية.</p></div>
+                    <div class="item"><p><i class="fa-solid fa-shield-virus"></i></p><p>مهارات تصنيف أجناس وأنواع النواقل باستخدام المفاتيح التصنيفية وطرق البصمة الوراثية.</p></div>
+                    <div class="item"><p><i class="fa-solid fa-shield-virus"></i></p><p>استخدام البرامج الإحصائية لتحليل البيانات وتوظيفها في قياس أداء المكافحة المتكاملة للنواقل.</p></div>
+                    <div class="item"><p><i class="fa-solid fa-shield-virus"></i></p><p>طرق عمل التخفيفات وخلط المبيدات ومعايرة أجهزة الرش وصيانتها.</p></div>
+                    <div class="item"><p><i class="fa-solid fa-shield-virus"></i></p><p>طرق قياس حساسية النواقل للمبيدات طبقًا للمواصفات القياسية الخاصة بمنظمة الصحة العالمية.</p></div>
+                    <div class="item"><p><i class="fa-solid fa-shield-virus"></i></p><p>السلامة المهنية وطرق للتعامل مع المبيدات والتداول الآمن للمبيدات.</p></div>
+                    <div class="item"><p><i class="fa-solid fa-shield-virus"></i></p><p>استخدام تقنيات نظم المعلومات الجغرافية GBS لمراقبة تحركات النواقل باستخدام الخرائط الرقمية.</p></div>
+                    <div class="item"><p><i class="fa-solid fa-shield-virus"></i></p><p>تزويد الشباب بالعديد من المعارف الهامة التي تساعدهم على وضع خطط المكافحة على أسس علمية وقياس أداء تنفيذها بمعايير أداء معتمدة دوليًا.</p></div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="intro" class="light">
+        <main class="container">
+            <div class="box">
+                <div class="card">
+                    <div class="title">
+                        <p>الهدف العام من الدورات التدريبية</p>
+                        <p><i class="fa-solid fa-book-medical"></i></p>
+                    </div>
+                    <p class="bio">أن يصبح المشارك بعد إنتهاء هذه الدورات قادرا على تشخيص آفات الصحة العامة الحشرية والحيوانية ووضع وتنفيذ الحلول المناسبة للسيطرة عليها.</p>
+                </div>
+                <div class="card">
+                    <div class="title">
+                        <p>الحقيبة التدريبية</p>
+                        <p><i class="fa-solid fa-suitcase-medical"></i></p>
+                    </div>
+                    <p class="bio">تم تصميم حقيبة تدريبية وفق أساليب علمية تحاكي متطلبات العمل في مجال حصر وتعريف ومكافحة آفات الصحة العامة بناء على حاجة تدريبية مفترضه لإكساب المشاركين المهارات اللازمة لهذا التخصص على اختلاف مراكزهم العلمية ومؤهلاتهم الدراسية.</p>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="title the-end">
+                            <p>سيحصل المشارك على شهادة نهاية كل دورة</p>
+                            <p><i class="fa-solid fa-receipt"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <footer class="footer-box">
+        <footer class="footer-card" id="overview">
+            <p class="card-name">نظرة عامة :</p>
+            <footer class="card-links">
+            <a href="/إتقاء/الرئيسية/home.html#about-us">عن إتقاء</a>
+            <a href="/إتقاء/الرئيسية/home.html#container">الرؤية</a>
+            <a href="/إتقاء/الرئيسية/home.html#container">القيم</a>
+            <a href="/إتقاء/الرئيسية/home.html#container">الرسالة</a>
+            <a href="/إتقاء/الرئيسية/home.html#strategy">الأهداف الإستراتيجية</a>
+            </footer>
+        </footer>
+        <footer class="footer-card" id="member">
+            <p class="card-name">الأعضاء :</p>
+            <footer class="card-links">
+            <a href="/إتقاء/الأعضاء/members.html#bord">أعضاء مجلس الإدارة</a>
+            <a href="/إتقاء/الأعضاء/members.html#">أعضاء الجمعية العمومية</a>
+            </footer>
+        </footer>
+        <footer class="footer-card" id="important-links">
+            <p class="card-name">روابط هامة :</p>
+            <footer class="card-links">
+            <a href="/إتقاء/الرئيسية/home.html#about-us">المتجر</a>
+            <a href="/إتقاء/الرئيسية/home.html#about-us">الحساب البنكي</a>
+            </footer>
+        </footer>
+        <footer class="footer-card" id="quick-links">
+            <p class="card-name">روابط سريعة :</p>
+            <footer class="card-links">
+            <a href="/إتقاء/الرئيسية/home.html##news">الأخبار</a>
+            <a href="/إتقاء/الرئيسية/home.html#events">الأحداث</a>
+            <a href="/إتقاء/الرئيسية/home.html#programs">البرامج</a>
+            </footer>
+        </footer>
+        <footer class="footer-card" id="social-media">
+            <footer class="social-media">
+            <p class="card-name">تابعنا على :</p>
+            <footer class="social-media-icons">
+                <a href="https://x.com/vector1control1?s=21" target="_blank" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://snapchat.com/t/fI8nEqmW" target="_blank" class="icon"><i class="fa-brands fa-snapchat"></i></a>
+                <a href="https://www.instagram.com/vector1control1/profilecard/?igsh=dG1wdmJoZTRncXZw" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="icon"><i class="fa-brands fa-whatsapp"></i></a>
+            </footer>
+            </footer>
+            <footer id="contact">
+            <p class="card-name">الدعم والمساعدة :</p>
+            <footer class="phone-email">
+                <a href="#" target="_blank"><i class="fa-solid fa-phone"></i><span>+966 55 7677 538</span></a>
+                <a href="mailto:d.v.co2024@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i><span>d.v.co2024@gmail.com</span></a>
+            </footer>
+            </footer>
+        </footer>
+        </footer>
+        <p class="copyright">جميع الحقوق محفوظة لجمعية إتقاء لمكافحة نواقل الأمراض &copy; 2024</p>
+    </footer>
+
+</body>
+
+</html>

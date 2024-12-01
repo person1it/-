@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+:root {
+    --gry: #808285;
+    --blue: #234254; 
+    --yellow: #78713D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: #ededed;
+}
+
+/*////////////////////////////////////////////////////////////////////////////// HEADER */
+.header {
+    margin: 2.5rem auto;
+    width: 70%;
+    max-width: 1366px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// LOGO */
+  .logo {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: auto;
+    height: 100%;
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// NAVIGATION */
+  .bar {
+    display: none;
+  }
+  
+  .bar-list {
+    display: none;
+  }
+  
+  .alrajhi {
+    display: none;
+  }
+  
+  .nav {
+    display: grid;
+    grid-template:
+    "bank store contact"
+    "nav-bar nav-bar nav-bar";
+    gap: 0.5rem;
+  }
+  
+  .bank {
+    grid-area: bank;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .bank-button {
+    cursor: pointer;
+  }
+  
+  .store {
+    grid-area: store;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .bank-button, .store i {
+    color: var(--blue);
+    font-size: 1.2rem;
+    transition: 0.7s ease;
+  }
+  
+  .bank-button:hover, .store i:hover {
+    color: var(--yellow);
+  }
+  
+  .bank-color {
+    color: var(--yellow);
+  }
+  
+  .contact {
+    grid-area: contact;
+    padding: 0 1rem 0.21rem 1rem;
+    border: none;
+    border-radius: 18rem;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Cairo", sans-serif;
+  }
+  
+  .contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: 0.7s ease;
+  }
+  
+  .main-menu {
+    grid-area: nav-bar;
+    padding: 0.5rem 1rem 0.71rem 1rem;
+    border: none;
+    border-radius: 18rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.7s ease;
+    font-family: "Cairo", sans-serif;
+  }
+  
+  .main-menu:hover, .contact:hover {
+    background-color: var(--yellow);
+  }
+  
+  .main-menu > i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .show-color {
+    background-color: var(--yellow);
+  }
+  
+  .alrajhibank {
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    background-color: var(--yellow);
+    transition: all 0.3s;
+    transform: scale(0);
+  }
+  
+  .open {
+    transform: scale(1);
+  }
+  
+  .alrajhibank img {
+    width: 7rem;
+    height: auto;
+  }
+  
+  .alrajhibank p {
+    direction: ltr;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// NAVIGATION BAR */
+  .navigation-bar {
+    padding: 1.5rem;
+    width: 25%;
+    position: absolute;
+    top: 6.6rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 1rem;
+    background-color: var(--yellow);
+    border-radius: 1rem;
+    transition: all 0.3s;
+    transform: scale(0);
+  }
+  
+  .active {
+    color: var(--yellow);
+    transform: scale(1);
+  }
+  
+  .navigation-bar > button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Cairo", sans-serif;
+  }
+  
+  .about-us a, .members a, .news a, .events a, .strategy a, .programs a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.7s ease;
+  }
+  
+  .about-us a:hover, .members a:hover, .news a:hover, .events a:hover, .strategy a:hover, .programs a:hover {
+    color: var(--yellow);
+  }
+  
+  .light {
+      background-color: #ededed;
+  }
+  
+  .dark {
+      background-color: var(--blue);
+  }
+  
+  #diploma {
+      width: 100%;
+  }
+  
+  .container {
+      margin: 0 auto;
+      max-width: 1366px;
+      padding: 5rem 15%;
+  }
+  
+  .box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .card {
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+  }
+  
+  .intro {
+      border: 1px solid #fff;
+  }
+  
+  .intro > h3 {
+      color: #fff;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+  }
+  
+  .definition {
+      padding: 0;
+      border-radius: 0;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      align-items: center;
+  }
+  
+  .definition-top {
+      padding-bottom: 5rem;
+      border-bottom: 1px solid #000;
+  }
+  
+  .definition-bot {
+      padding: 5rem 0;
+      border-bottom: 1px solid #000;
+  }
+  
+  .definition > h1 {
+      color: var(--blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.3rem;
+      font-weight: 700;
+  }
+  
+  .definition > p {
+      color: var(--blue);
+      font-size: 1.2rem;
+      font-weight: 400;
+  }
+  
+  .line {
+      border-bottom: 1px solid #000;
+      border-radius: 0;
+  }
+  
+/*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 1024 */
+
+.light {
+    background-color: #ededed;
+}
+
+.dark {
+    background-color: var(--blue);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 5rem 12.5%;
+    max-width: 1366px;
+}
+
+.box {
+    width: 100%;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+
+
+#intro {
+    width: 100%;
+}
+
+.intro-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-card {
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.intro-card > h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+.intro2-con {
+    height: 60vh;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro2-card {
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.vision-box {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.intro2-card h3, .vision-card h3 {
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.img {
+    width: 80%;
+    height: 150%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img > img {
+  width: 100%;
+  height: auto;
+}
+
+/*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 1024 */
+.results-name {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-family: 700;
+}
+
+.results-box {
+    width: 100%;
+}
+
+.results-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 50%);
+}
+
+.item {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.bio {
+    font-size: 1.2rem;
+}
+
+.the-end {
+    border-bottom: 2px solid var(--yellow);
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////////////////////// FOOTER */
+#footer {
+    margin-top: 5rem;
+    padding: 5rem 15% 1rem 15%;
+    display: grid;
+    gap: 1rem;
+    background-color: var(--yellow);
+    color: #fff;
+  }
+  
+  .footer-box {
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.05rem solid #fff;
+  }
+  
+  .footer-card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-card a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease;
+  }
+  
+  .footer-card a:hover {
+    color: var(--blue);
+  }
+  
+  .card-name {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .card-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .social-media-icons > a {
+    font-size: 1.3rem;
+  }
+  
+  #contact {
+    margin-top: 1rem;
+  }
+  
+  .phone-email {
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+  
+  .phone-email i {
+    margin-right: 0.6rem;
+  }
+  
+  .copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 1024 */
+  @media (max-width:1024px) {
+    html {
+      font-size: 15px;
+    }
+    /* NAVIGATION */
+    .nav {
+      display: none;
+    }
+    .bar {
+      padding: 0.3rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .store, .bar-btn, .bank-btn {
+      padding: 0.6rem;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    .store i, .bar-btn, .bank-btn {
+      color: var(--blue);
+      font-size: 1.8rem;
+      transition: 0.7s ease;
+    }
+    .store i:hover, .bar-btn:hover, .bank-btn:hover {
+      color: var(--yellow);
+    }
+    .alrajhi {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      display: block;
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      background-color: var(--yellow);
+      transition: all 0.3s;
+      transform: scale(0);
+    }
+    .alrajhi img {
+      width: 6rem;
+      height: auto;
+    }
+    .alrajhi p {
+      direction: ltr;
+      color: #fff;
+      font-weight: 600;
+    }
+    .phone-btn {
+      color: var(--yellow);
+    }
+    .phone-button {
+      color: var(--yellow);
+    }
+    .show {
+      transform: scale(1);
+    }
+    /* NAVIGATION BAR */
+    .bar-list {
+      width: 40%;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 1rem;
+      background-color: var(--yellow);
+      transition: all 0.3s;
+      transform: scale(0);
+    }
+    .bar-list.toggle-menu {
+      transform: scale(1);
+    }
+    .bar-list-btn {
+      border: none;
+      background-color: transparent;
+      font-family: "Cairo", sans-serif;
+    }
+    .bar-list-btn a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: 0.4s ease;
+    }
+    .bar-list-btn a:hover {
+      color: var(--yellow);
+    }
+    /* FOOTER */
+    #footer {
+      padding: 5rem 10% 1rem 10%;
+    }
+    .footer-box {
+      display: grid;
+      grid-template:
+      "overview members important-links quick-links"
+      "social-media social-media social-media social-media";
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(2, auto);
+      row-gap: 1rem;
+    }
+    #overview {
+      grid-area: overview;
+    }
+    #members {
+      grid-area: members;
+    }
+    #important-links {
+      grid-area: important-links;
+    }
+    #quick-links {
+      grid-area: quick-links;
+    }
+    #social-media {
+      grid-area: social-media;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .phone-email {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 800 */
+  @media (max-width:800px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 700 */
+  @media (max-width:700px) {
+    html {
+      font-size: 13px;
+    }
+    /* FOOTER */
+    .footer-box {
+      grid-template:
+      "overview members important-links"
+      "quick-links social-media social-media";
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      align-items: start;
+      row-gap: 2.5rem;
+    }
+    .phone-email {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 600 */
+  @media (max-width:600px) {
+    html {
+      font-size: 12px;
+    }
+    /* FOOTER */
+    .footer-box {
+      display: flex;
+      flex-direction: column;
+    }
+    #social-media {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: start;
+      gap: 2rem;
+    }
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 500 */
+  @media (max-width:500px) {
+    html {
+      font-size: 11px;
+    }
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 450 */
+  @media (max-width:450px) {
+    html {
+      font-size: 10px;
+    }
+    /* NAVIGATION BAR */
+    .bar-list {
+      width: 100%;
+      top: 6rem;
+      align-items: center;
+    }
+    .alrajhi {
+      width: 100%;
+      top: 6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .alrajhi img {
+      margin-bottom: 1rem;
+    }
+    /* FOOTER */
+    .footer-box {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #social-media {
+      align-items: center;
+    }
+    .phone-email {
+      align-items: center;
+    }
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 300 */
+  @media (max-width:300px) {
+    html {
+      font-size: 9px;
+    }
+  }
+  
+  /*////////////////////////////////////////////////////////////////////////////// RESPONSIVE DESIGN > 200 */
+  @media (max-width:200px) {
+    html {
+      font-size: 8px;
+    }
+  }

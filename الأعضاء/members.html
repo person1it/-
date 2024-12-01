@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>جمعية إتقاء - الأعضاء</title>
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <header class="header">
+            <a href="/إتقاء/الرئيسية/home.html" class="logo"><img src="/إتقاء/الرئيسية/logo.png"></a>
+    
+            <!-- NAVIGATION -->
+            <nav class="nav">
+            <button class="bank"><i class="fa-solid fa-landmark bank-button"></i></button>
+            <button class="store"><a href="#"><i class="fa-solid fa-cart-shopping "></i></a></button>
+            <button class="contact"><a href="/إتقاء/الرئيسية/home.html#contact">تواصل معنا</a></button>
+            <button class="main-menu main-menu-btn">القائمة الرئيسية<i class="fa-solid fa-bars-staggered"></i></button>
+            </nav>
+    
+            <script>
+            const bankBt = document.querySelector(".bank-button");
+            const bankColor = document.querySelector(".bank-button");
+    
+            bankBt.addEventListener("click", () => {
+                bankColor.classList.toggle("bank-color");
+            })
+            </script>
+    
+            <script>
+            const mainMenuBtn = document.querySelector(".main-menu-btn");
+            const mainMenuColor = document.querySelector(".main-menu-btn");
+    
+            mainMenuBtn.addEventListener("click", () => {
+                mainMenuColor.classList.toggle("show-color");
+            })
+            </script>
+    
+            <nav class="alrajhibank">
+            <img src="alrajhibank-logo.png">
+            <p>SA000 0000 00</p>
+            <p>000 000 0000</p>
+            </nav>
+            </script>
+    
+            <script>
+            const bank = document.querySelector(".bank-button");
+            const alrajhiBank = document.querySelector(".alrajhibank");
+    
+            bank.addEventListener("click", () => {
+                alrajhiBank.classList.toggle("open");
+            })
+            </script>
+    
+            <!--script>
+            function RunMe(){
+                var bank = document.querySelector(".bank");
+                
+                bank.add.
+            }
+            </script-->
+    
+            <!-- NAVIGATION BAR -->
+            <nav class="navigation-bar">
+            <button class="about-us"><a href="/إتقاء/الرئيسية/home.html#about-us">عن إتقاء</a></button>
+            <button class="members"><a href="/إتقاء/الرئيسية/home.html#members">الأعضاء</a></button>
+            <button class="news"><a href="/إتقاء/الرئيسية/home.html#news">الأخبار</a></button>
+            <button class="events"><a href="/إتقاء/الرئيسية/home.html#events">الأحداث</a></button>
+            <button class="programs"><a href="/إتقاء/الرئيسية/home.html#programs">البرامج</a></button>
+            <button class="strategy"><a href="/إتقاء/الرئيسية/home.html#strategy">الأهداف الإستراتيجية</a></button>
+            </nav>
+    
+            <script>
+            const mainMenu = document.querySelector(".main-menu");
+            const navigationBar = document.querySelector(".navigation-bar");
+    
+            mainMenu.addEventListener("click", () => {
+                navigationBar.classList.toggle("active");
+            })
+            </script>
+    
+            <!-- BAR -->
+            <nav class="bar">
+            <button class="bank-btn"><i class="fa-solid fa-landmark alrajhi-btn"></i></button>
+            <button class="store"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></button>
+            <button class="bar-btn"><i class="fa-solid fa-bars-staggered menu-btn"></i></button>
+            </nav>
+    
+            <script>
+            const phonBtn = document.querySelector(".alrajhi-btn");
+            const phonButton = document.querySelector(".alrajhi-btn");
+    
+            phonBtn.addEventListener("click", () => {
+                phonButton.classList.toggle("phone-btn");
+            })
+            </script>
+    
+            <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const menuButton = document.querySelector(".menu-btn");
+    
+            menuBtn.addEventListener("click", () => {
+                menuButton.classList.toggle("phone-button");
+            })
+            </script>
+    
+            <!-- BAR LIST -->
+            <nav class="bar-list">
+            <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#about-us">عن إتقاء</a></button>
+            <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#members">الأعضاء</a></button>
+            <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#news">الأخبار</a></button>
+            <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#events">الأحداث</a></button>
+            <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#programs">البرامج</a></button>
+            <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#strategy">الأهداف الإستراتيجية</a></button>
+            <button class="bar-list-btn"><a href="/إتقاء/الرئيسية/home.html#contact">تواصل معنا</a></button>
+            </nav>
+    
+            <script>
+            const barBtn = document.querySelector(".menu-btn");
+            const barlist = document.querySelector(".bar-list");
+    
+            barBtn.addEventListener("click", () => {
+                barlist.classList.toggle("toggle-menu");
+            })
+            </script>
+    
+            <nav class="alrajhi">
+            <img src="alrajhibank-logo.png">
+            <p>SA000 0000 00</p>
+            <p>000 000 0000</p>
+            </nav>
+    
+            <script>
+            const bankBtn = document.querySelector(".alrajhi-btn");
+            const alrajhi = document.querySelector(".alrajhi");
+    
+            bankBtn.addEventListener("click", () => {
+                alrajhi.classList.toggle("show");
+            })
+            </script>
+    
+        </header>
+
+        <section class="main" id="bord">
+            <h3>أعضاء مجلس الإدارة</h3>
+            <div class="box" id="bos">
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. محمد محسن عيد الجميلي</p>
+                    <p class="bio">رئيس مجلس الإدارة</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. عبد الله جار الله الغامدي</p>
+                    <p class="bio">عضو مجلس الإدارة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ.د. عبد الرحمن عبد الله محمد آل معدي</p>
+                    <p class="bio">عضو مجلس الإدارة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ. ماجد بن سليم بن سليمان الرفاعي</p>
+                    <p class="bio">عضو مجلس الإدارة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. شذى ابراهيم ضيف الله القرشي</p>
+                    <p class="bio">نائبة رئيس مجلس الإدارة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. سمر أحمد كمال خان</p>
+                    <p class="bio">عضو مجلس الإدارة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. حنان سلمان اليحيى</p>
+                    <p class="bio">عضو مجلس الإدارة</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main" id="general-assembly">
+            <h3>أعضاء الجمعية العمومية</h3>
+            <div class="box">
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. محمد محسن عيد الجميلي</p>
+                    <p class="bio">التخصص : حشرات طبية ومكافحة النواقل</p>
+                    <p class="bio">جهة العمل : جامعة الحدود الشمالية</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. عبد الله جار الله الغامدي</p>
+                    <p class="bio">التخصص : حشرات طبية وجنائية</p>
+                    <p class="bio">جهة العمل : جامعة الملك عبدالعزيز</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ.د. عبد الرحمن عبد الله محمد آل معدي</p>
+                    <p class="bio">التخصص : علم الحشرات والمكافحة البيولوجية</p>
+                    <p class="bio">جهة العمل : جامعة نجران</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ. ماجد بن سليم بن سليمان الرفاعي</p>
+                    <p class="bio">التخصص : زراعة المناطق الجافة</p>
+                    <p class="bio">جهة العمل : جامعة الملك عبدالعزيز</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ.د. حامد علي حمد آل غرامة</p>
+                    <p class="bio">التخصص : مكافحة نواقل الأمراض الوبائية</p>
+                    <p class="bio">جهة العمل : جامعة الملك خالد</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ.د. خالد محمد سعيد الغامدي</p>
+                    <p class="bio">التخصص : المكافحة الحيوية</p>
+                    <p class="bio">جهة العمل : جامعة الملك عبدالعزيز</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">م. فهد بن صالح الزهراني</p>
+                    <p class="bio">التخصص : وقاية النبات</p>
+                    <p class="bio">جهة العمل : أمانة محافظة جدة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. ناصر أحمد حمد الكناني</p>
+                    <p class="bio">التخصص : سموم بيولوجية وتحكم بيولوجي</p>
+                    <p class="bio">جهة العمل : جامعة الملك عبدالعزيز</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. محمد بن راشد الزهراني</p>
+                    <p class="bio">التخصص : علم الحشرات</p>
+                    <p class="bio">جهة العمل : إدارة التعليم بمحاظة الطائف</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. بدر سعد الشمري</p>
+                    <p class="bio">التخصص : رياضيات</p>
+                    <p class="bio">جهة العمل : جامعة الحدود الشمالية</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ. سعد مريع القحطاني</p>
+                    <p class="bio">التخصص : علم الحشرات</p>
+                    <p class="bio">جهة العمل : جامعة جازان</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ.د. أسامة محمد باحارث</p>
+                    <p class="bio">التخصص : علم الحشرات</p>
+                    <p class="bio">جهة العمل : جامعة أم القرى</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. حبيب منصور السلمي</p>
+                    <p class="bio">التخصص : لافقاريات (نواقل الأمراض)</p>
+                    <p class="bio">جهة العمل : جامعة الملك عبدالعزيز</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. هاني عبدالرحمن الطويرقي</p>
+                    <p class="bio">التخصص : علم الحشرات</p>
+                    <p class="bio">جهة العمل : متقاعد</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. عبادي بن محمد مشلوي</p>
+                    <p class="bio">التخصص : علم الحشرات</p>
+                    <p class="bio">جهة العمل : جامعة جازان</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ. عبدالعزيز علي مبارك آل حميد</p>
+                    <p class="bio">التخصص : علم الحشرات</p>
+                    <p class="bio">جهة العمل : مختبر الأمراض المدارية بجازان</p>
+                </div>
+
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. شذى ابراهيم ضيف الله القرشي</p>
+                    <p class="bio">التخصص : علم الحشرات</p>
+                    <p class="bio">جهة العمل : جامعة جدة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. سمر أحمد كمال خان</p>
+                    <p class="bio">التخصص : مفصليات وطفيليات</p>
+                    <p class="bio">جهة العمل : جامعة جدة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. حنان سلمان اليحيى</p>
+                    <p class="bio">التخصص : المكافحة البيولوجية</p>
+                    <p class="bio">جهة العمل : جامعة الملك عبدالعزيز</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. فهدة عايد الشمري</p>
+                    <p class="bio">التخصص : أحياء دقيقة</p>
+                    <p class="bio">جهة العمل : جامعة الحدود الشمالية</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. حياة سعود الرشيدي</p>
+                    <p class="bio">التخصص : مفصليات وطفيليات</p>
+                    <p class="bio">جهة العمل : جامعة القصيم</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. نعيمة بنت عصيد حمود العنزي</p>
+                    <p class="bio">التخصص : حشرات طبية ومكافحة النواقل</p>
+                    <p class="bio">جهة العمل : جامعة حائل</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">أ. ولاء عبدالرحمن بغدادي</p>
+                    <p class="bio">التخصص : علم الحشرات</p>
+                    <p class="bio">جهة العمل : أمانة العاصمة المقدسة</p>
+                </div>
+                <div class="card">
+                    <p class="photo"><i class="fa-solid fa-user-doctor"></i></p>
+                    <p class="name">د. سمية محمد شعراوي</p>
+                    <p class="bio">التخصص : علم البيولوجية الجزيئية في الحشرات</p>
+                    <p class="bio">جهة العمل : جامعة الملك عبدالعزيز</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <footer class="footer-box">
+            <footer class="footer-card" id="overview">
+                <p class="card-name">نظرة عامة :</p>
+                <footer class="card-links">
+                <a href="/إتقاء/الرئيسية/home.html#about-us">عن إتقاء</a>
+                <a href="/إتقاء/الرئيسية/home.html#container">الرؤية</a>
+                <a href="/إتقاء/الرئيسية/home.html#container">القيم</a>
+                <a href="/إتقاء/الرئيسية/home.html#container">الرسالة</a>
+                <a href="/إتقاء/الرئيسية/home.html#strategy">الأهداف الإستراتيجية</a>
+                </footer>
+            </footer>
+            <footer class="footer-card" id="member">
+                <p class="card-name">الأعضاء :</p>
+                <footer class="card-links">
+                <a href="/إتقاء/الأعضاء/members.html#bord">أعضاء مجلس الإدارة</a>
+                <a href="/إتقاء/الأعضاء/members.html#">أعضاء الجمعية العمومية</a>
+                </footer>
+            </footer>
+            <footer class="footer-card" id="important-links">
+                <p class="card-name">روابط هامة :</p>
+                <footer class="card-links">
+                <a href="/إتقاء/الرئيسية/home.html#about-us">المتجر</a>
+                <a href="/إتقاء/الرئيسية/home.html#about-us">الحساب البنكي</a>
+                </footer>
+            </footer>
+            <footer class="footer-card" id="quick-links">
+                <p class="card-name">روابط سريعة :</p>
+                <footer class="card-links">
+                <a href="/إتقاء/الرئيسية/home.html##news">الأخبار</a>
+                <a href="/إتقاء/الرئيسية/home.html#events">الأحداث</a>
+                <a href="/إتقاء/الرئيسية/home.html#programs">البرامج</a>
+                </footer>
+            </footer>
+            <footer class="footer-card" id="social-media">
+                <footer class="social-media">
+                <p class="card-name">تابعنا على :</p>
+                <footer class="social-media-icons">
+                    <a href="https://x.com/vector1control1?s=21" target="_blank" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://snapchat.com/t/fI8nEqmW" target="_blank" class="icon"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://www.instagram.com/vector1control1/profilecard/?igsh=dG1wdmJoZTRncXZw" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="icon"><i class="fa-brands fa-whatsapp"></i></a>
+                </footer>
+                </footer>
+                <footer id="contact">
+                <p class="card-name">الدعم والمساعدة :</p>
+                <footer class="phone-email">
+                    <a href="#" target="_blank"><i class="fa-solid fa-phone"></i><span>+966 55 7677 538</span></a>
+                    <a href="mailto:d.v.co2024@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i><span>d.v.co2024@gmail.com</span></a>
+                </footer>
+                </footer>
+            </footer>
+            </footer>
+            <p class="copyright">جميع الحقوق محفوظة لجمعية إتقاء لمكافحة نواقل الأمراض &copy; 2024</p>
+        </footer>
+    </body>
+
+</html>
